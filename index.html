@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=1.0">
+  <title>Media Library</title>
+  <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/Javascript/app.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+
+    html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+  </style>
+</head>
+<body>
+<!-- Bootstrap modal -->
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <!-- Modal Body -->
+      <div class="modal-body">
+        <div class="body-message">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-8">
+                  <img />
+              </div>
+              <div class="col-4">
+                <form>
+                  <label for="name">Alternative Text</label>
+                  <input id="name" type="input" name="name"/>
+                  <label for="email">Image Title</label>
+                  <input id="name" type="input" name="email"/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+    <div class="page">
+          <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h1>Media Library</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain.jpg" alt="Two streets in Navarra Spain"/></a>
+                  </div>
+                  <!-- <div class="col-4">
+                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain-thumb.jpg" alt="Two streets in Navarra Spain"/></a>
+                  </div>
+                  <div class="col-4">
+                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain-medium.jpg" alt="Two streets in Navarra Spain"/></a>
+                  </div>
+                </div> -->
+          </div>
+    </div>
+</body>
+</html>
