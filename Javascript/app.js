@@ -5,9 +5,23 @@ $(document).ready(function () {
     //prevent default click
     event.preventDefault();
 
-    $('.bd-example-modal-xl').modal('show');
+    $('.bd-example-modal-xl').modal('show');//launch Modal
 
-    //get folder name
+    //Apply image crop plugin
+    $('#photoDisplay').croppie();
+
+    $.getJSON("data.json", function(data) {
+      //put returned items into an array
+
+      console.log(data);
+    });
+
+
+    //$(".modal-title").mediaLibrary();
+
+
+
+    /*get folder name
     var img = $(this).find('img').attr('src');
 
 
@@ -16,7 +30,7 @@ $(document).ready(function () {
     var folderName = "/images/" + parts[2];
 
     console.log(folderName);
-    //load images
+    */
 
     //AJAX call to method in Laravel that retrieves all files in a folder
 

@@ -10,7 +10,10 @@
         crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/Javascript/croppie.js"></script>
+  <script src="/Javascript/jquery.medialibraryRL.js"></script>
   <script src="/Javascript/app.js"></script>
+  <link rel="stylesheet" href="croppie.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
@@ -29,26 +32,49 @@
 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-xl">
   <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Edit image</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <!-- Modal Body -->
       <div class="modal-body">
         <div class="body-message">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-8">
-                  <img />
+              <div class="col-md-7">
+                  <img id="photoDisplay" class="img-fluid" src="/images/1/street-navarra-spain-thumb.jpg" alt="Two streets in Navarra Spain"/>
+                  <a href="#">Previous</a> | <a href="#">Next</a>
+                  <p>Filename: </p>
+                  <p>Width: </p>
+                  <p>Height: </p>
               </div>
-              <div class="col-4">
-                <form>
-                  <label for="name">Alternative Text</label>
-                  <input id="name" type="input" name="name"/>
-                  <label for="email">Image Title</label>
-                  <input id="name" type="input" name="email"/>
+              <div class="col-md-5">
+                <form action="#" method="get">
+
+                        <div class="form-group">
+                          <label for="altText">Image Description *</label>
+                          <input type="altText" class="form-control" name="altText" id="altText"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="imgTitle">Image Title</label>
+                          <input type="imgTitle" class="form-control" name="imgTitle" id="altText"/>
+                        </div>
+
+
+
                 </form>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
   </div>
 </div>
 </div>
@@ -61,15 +87,9 @@
                 </div>
                 <div class="row">
                   <div class="col-4">
-                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain.jpg" alt="Two streets in Navarra Spain"/></a>
+                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/1/street-navarra-spain.jpg" alt="Two streets in Navarra Spain"/></a>
                   </div>
-                  <!-- <div class="col-4">
-                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain-thumb.jpg" alt="Two streets in Navarra Spain"/></a>
-                  </div>
-                  <div class="col-4">
-                    <a id="imgLibrarythumb" href="#"><img class="img-fluid" src="/images/street-navarra-spain/street-navarra-spain-medium.jpg" alt="Two streets in Navarra Spain"/></a>
-                  </div>
-                </div> -->
+
           </div>
     </div>
 </body>
